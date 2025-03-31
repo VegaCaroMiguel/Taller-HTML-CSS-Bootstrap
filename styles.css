@@ -1,0 +1,61 @@
+:root {
+    --dark-bg: #111;
+    --card-bg: #1a1a1a;
+    --text-light: #f8f9fa;
+    --accent: #4CAF50;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+.hero-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.accordion-button {
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--card-bg);
+    color: var(--accent);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--accent);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: var(--accent);
+}
+
+.album-cover {
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
